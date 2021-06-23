@@ -1,0 +1,272 @@
+*{
+    margin: 0px;
+    padding:0px
+}
+/* 头部 */
+.tpout{
+    width:100%;
+    /* height: 75px; */
+    border-bottom: 2px solid #d0d0d0;
+    padding: 20px 0px;
+}
+.tpin{
+    width: 1080px;
+    height: 50px;
+    margin: auto;
+}
+.tpin > img{
+    width:160px;
+    float: left;
+}
+.tpin > ul{
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+    float: left;
+  
+}
+.tpin > ul > li{
+    list-style: none;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    margin-left:50px;
+    float: left;
+    color: #322c30;
+}
+.tpin > ul > li:hover{
+    color: #f35623;
+}
+.tpin > ol {
+    margin: 0%;
+    padding: 0%;
+    /* width: 115px; */
+    list-style: none;
+    float: right;
+}
+.tpin > ol > li{
+    /* border:1px solid #f35623; */
+    width:50px;
+    height: 30px;;
+    color:#f35623;
+    text-align: center;
+    line-height:30px;
+    margin-top: 10px;
+    margin-left:25px;
+    float: left;
+}
+.tpin > ol > li:nth-child(1){
+    width: 24px;
+    background: url(../img/sousuo.jpg) no-repeat 0px 3px;
+}
+.tpin > ol >li:nth-child(2){
+    width: 50px;
+    height: 30px;
+    border-radius:10%;
+    border:1px solid #f35623;
+}
+/* 图片 */
+.hang1{
+    width: 100%;
+    height: 300px;
+    background: url(../css/img/original.jpg) no-repeat center center;
+}
+.photo{
+    margin: auto;
+    width: 1080px;
+    height: 300px;
+    position: relative;
+}
+.ding{
+    position: absolute;
+    top: -300px;
+    right: -300px;
+    float: right;
+    text-align: right;
+    color: white;
+    margin: 40px 0px 0px 0px;
+    
+}
+.ding span{
+    display: inline-block;
+    margin: 30px 10px;
+    background-color: #f5d097;
+    height: 20px;
+    line-height: 20px;
+    padding: 5px;
+}
+.ding p:nth-child(6){
+    font-size: 18px;
+}
+.ding p:nth-child(7){
+    font-size: 20px;
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #fe5341;
+    margin-left:50px ;
+    text-align: center;
+    margin-top: 20px;
+}
+.hanga{
+    width: 1080px;
+    height: 50px;
+    line-height: 50px;
+    margin: auto;
+}
+/* 轮播 */
+.lunbo{
+    margin: auto;
+    width: 1080px;
+    height: 380px;
+    background-color: turquoise;
+}
+/* 报告精选 */
+.biaoT{
+    width: 1080px;
+    height: 50px;
+    line-height: 50px;
+    margin: auto;
+    overflow: hidden;
+}
+.biaoT h3{
+    float: left;
+}
+.biaoT p{
+    float: right;
+}
+.hangH{
+    overflow: hidden;
+    background-color:#f7f7f7 ;
+}
+.hang3{
+    background-color:#f7f7f7;
+    overflow: hidden;
+}
+.baogao{
+    margin: auto;
+    width: 1146px;
+    /* height: 75px; */
+    /* overflow: hidden; */
+}
+.boxB{
+    width: 218px;
+    margin: 10px 33px;
+    float: left;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+}
+.boxB p{
+    height: 50px;
+    width: 220px;
+    font-size: 13px;
+}
+.boxB2{
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background-color:#a7a6a2 ;
+}
+.imgaa{
+    float: right;
+}
+.daoGo{
+    margin: auto;
+    width: 1146px;
+    height: auto;
+}
+.daoGoB{
+    width: 218px;
+    margin: 10px 33px;
+    float: left;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+}
+.daoGoB p{
+    height: 50px;
+    width: 220px;
+    font-size: 13px;
+}
+.daoGoq{
+    overflow: hidden;
+}
+.kuwan{
+    margin: auto;
+    width: 1146px;
+    height: auto;
+}
+.kuWanB{
+    width: 218px;
+    margin: 10px 33px;
+    float: left;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+}
+.kuWanB .kuwanB{
+    color: red;
+}
+.kuWanB p:nth-child(2){
+    height: 30px;
+    width: 220px;
+    font-size: 13px;
+}
+.kuWan1{
+    color: #ccc;
+    font-size: 12px;
+}
+/* 底部 */
+.buttom{
+    width: 100%;
+    height: 360px;
+    background-color: #505050;
+}
+.buttom1{
+    margin: auto;
+    width: 1080px;
+    height: 360px;
+    padding-top: 40px;
+    /* overflow: hidden; */
+}
+.buttom2{
+    width: 160px;
+    height: 280px;
+    float: left;
+    margin-right: 15px;
+}
+.buttom3{
+    float: left;
+    height: 280px;
+    margin-right: 30px;
+}
+.buttom3 p{
+    margin-top: 20px;
+    color:#ccc;
+}
+.buttom4{
+    height: 280px;
+    float: left;
+    margin-right: 15px;
+}
+.buttom4 h3{
+    color:#ccc;
+    margin-bottom: 30px;
+}
+.buttom4 span{
+    display: inline-block;
+    width:80px;
+    color:#ccc;
+} 
+.buttom4 p{
+    color:#ccc;
+}
+.buttom5{
+    margin: auto;
+    text-align: center;
+    color:#ccc;
+}
