@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+<script src="./jquery-3.5.1.js"></script>
+<script>
+    $(function(){
+        $.ajax({
+            url:'http://localhost:3000/report/new',
+            type:'GET',
+            dataType:'JSON',
+            success:function(data){
+                console.log(data);
+                console.log(data[4]);
+                console.log(data[4].img);
+                console.log(data[4].text);
+var bj = data[4].text;
+    var str = data[4].img;
+    var iSrc = str.replace(/http:\/\/localhost/g, 'http://localhost')
+    $('img').attr('src', iSrc)
+    console.log(iSrc);
+    $('div').html(bj)
+    $('span').html(data[4].uName)
+    $('a').html(data[4].endTime)
+    // document.write(iSrc)
+    // document.write(data[3].text)
+
+            }
+        })
+    })
+
+
+//     $.ajax({
+
+//             url:'http://localhost:3000/play/hot',
+//             type:'GET',
+//             dataType:'JSON',
+//             success:function(data){
+//                 console.log(data);
+//                 console.log(data[0]);
+//                 console.log(data[0][0]);
+//                 console.log(data[0][0].img);
+//                 console.log(data[0][0].text);
+
+//     var str = data[0][0].img;
+//     var iSrc = str.replace(/http:\/\/192.168.1.64/g , 'http://localhost')
+//     $('img').attr('src', iSrc)
+//     console.log(iSrc);
+//    // document.write(iSrc)
+//             }
+//         })
+//     })
+
+</script>
+</head>
+<body>
+    <img src="" alt="">
+    <div class="a"></div>
+    <span></span><a href=""></a>
+</body>
+
+</html>
