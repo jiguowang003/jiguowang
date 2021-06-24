@@ -69,40 +69,36 @@ a{
   border-radius:10%;
   border:1px solid #f35623;
 }
-.fa {
-  text-align: center;
-  height: 160px;
-  line-height: 160px;
-  font-size: 48px;
-}
-.zui {
-  width: 480px;
+.top1{
+  width: 1080px;
   margin: auto;
-  overflow: hidden;
 }
-.zui #one {
-  border-bottom: 4px solid #FE5341;
-  color: #FE5341;
-}
-.zui #one a {
-  color: #FE5341;
-}
-.zui .xin {
-  width: 160px;
-  height: 40px;
-  color: #C3C3C5;
-  line-height: 40px;
-  font-size: 24px;
+.top1 p{
   text-align: center;
-  border-bottom: 4px solid white;
-  float: left;
+  margin: auto;
 }
-.zui .xin a {
-  color: #C3C3C5;
+.top1 p span{
+  display: inline-block;
+  width: 100px;
+  height: 40px ;
+  line-height: 40px;
+   
+  font-size: 15px;
+  margin: 0px 20px;
 }
-.zui .xin:hover {
-  color: #FE5341;
-  border-bottom: 4px solid #FE5341;
+.top1 p span a{
+  color: black;
+}
+.top5{
+  border-bottom: 2px solid red;
+}
+.top9{
+  margin: auto;
+  margin-top: 40px;
+  width: 1080px;
+}
+.top9 h1{
+  text-align: center;
 }
 article {
   background-color: #F7F7F7;

@@ -13,7 +13,7 @@ $.ajax({
         var str = '';
         $.each(data,function(index,ele){
             var src=data[index].img;
-            var isrc=src.replace(/localhos/g,"192.168.31.148")
+            var isrc=src.replace(/192.168.1.64/g,"192.168.31.148")
             if(index<8){
                 str+=`
                 <div class="boxB">
@@ -39,7 +39,7 @@ $.ajax({
         var str = '';
         $.each(data,function(index,ele){
             var src=data[index].img;
-            var isrc=src.replace(/localhos/g,"192.168.31.148")
+            var isrc=src.replace(/192.168.1.64/g,"192.168.31.148")
             if(index<4){
                 str+=`
                 <div class="daoGoB">
@@ -65,7 +65,7 @@ $.ajax({
         $.each(data,function(index,ele){
             if(index<8){
                 var src=data[0][index].img;
-                var isrc=src.replace(/localhos/g,"192.168.31.148")
+                var isrc=src.replace(/192.168.1.64/g,"192.168.31.148")
                 console.log(src)
                 str+=`
                 <div class="kuWanB">
@@ -82,7 +82,7 @@ $.ajax({
         $.each(data,function(index,ele){
             if(index<8){
                 var src=data[1][index].img;
-                var isrc=src.replace(/localhos/g,"192.168.31.148")
+                var isrc=src.replace(/192.168.1.64/g,"192.168.31.148")
                 console.log(src)
                 str+=`
                 <div class="kuWanB">
@@ -101,7 +101,7 @@ $.ajax({
         $.each(data,function(index,ele){
             if(index<8){
                 var src=data[1][index].img;
-                var isrc=src.replace(/localhos/g,"192.168.31.148")
+                var isrc=src.replace(/192.168.1.64/g,"192.168.31.148")
                 console.log(src)
                 str+=`
                 <div class="kuWanB">
@@ -120,7 +120,7 @@ $.ajax({
         $.each(data,function(index,ele){
             if(index<8){
                 var src=data[2][index].img;
-                var isrc=src.replace(/localhos/g,"192.168.31.148")
+                var isrc=src.replace(/192.168.1.64/g,"192.168.31.148")
                 console.log(src)
                 str+=`
                 <div class="kuWanB">
@@ -206,13 +206,13 @@ $(function(){
             var shu = 0;
             var sindex = "";
             data[shu].map(function(item){
-                var isrc = item.img.replace(/192.168.1.64/g,'localhost')
+                var isrc = item.img.replace(/192.168.1.64/g,'192.168.31.148')
                 sindex += `<li><img src="${isrc}" alt="">
                 <div class="mu">${item.text}</div>
                 <div><span class="hong">2032</span><span class="hong">20台</span></div>
                 <div><a>1392</a>申请</div>
                 <div class="chen">剩余时间两天</div>
-                <div class="you">首发</div><>`
+                <div class="you">首发</div>`
             })
             $('article ul').html(sindex)
         }
