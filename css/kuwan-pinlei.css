@@ -2,6 +2,10 @@
   margin: 0px;
   padding: 0px;
 }
+a{
+  text-decoration: none;
+  color: red;
+}
 /* 头部 */
 .tpout{
   width:100%;
