@@ -270,3 +270,105 @@
     text-align: center;
     color:#ccc;
 }
+article {
+    width: 1000px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+  }
+  article p {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  article .lun {
+    width: 1000px;
+    height: 328px;
+    overflow: hidden;
+  }
+  article .lun ul {
+    overflow: hidden;
+    list-style: none;
+    width: 2000px;
+    margin-bottom: 20px;
+  }
+  article .lun ul li {
+    float: left;
+    position: relative;
+    margin-right: 20px;
+    border-radius: 10px;
+    border: 1px solid #EEEEEE;
+    overflow: hidden;
+    text-align: center;
+  }
+  article .lun ul li .you {
+    height: 20px;
+    line-height: 20px;
+    color: white;
+    width: 40px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 12px;
+    border-radius: 0px 10px 0px 10px;
+    background-color: #FE5341;
+  }
+  article .lun ul li .shang {
+    height: 20px;
+    line-height: 20px;
+    color: #CAB685;
+    width: 80px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 12px;
+    border-radius: 0px 10px 0px 10px;
+    background-color: #F9F1CB;
+  }
+  article .lun ul li img {
+    width: 228px;
+  }
+  article .lun ul li .mu {
+    font-weight: bold;
+    margin-bottom: 30px;
+    width: 210px;
+    height: 40px;
+  }
+  article .lun ul li .hong {
+    color: #FE5341;
+    border: 1px solid #FE5341;
+    padding: 5px;
+    border-radius: 10px;
+    margin-right: 10px;
+    font-size: 12px;
+    margin-bottom: 100px;
+  }
+  article .lun ul li .lv {
+    color: green;
+    border: 1px solid green;
+    padding: 5px;
+    border-radius: 10px;
+    margin-right: 10px;
+    font-size: 12px;
+    margin-bottom: 100px;
+  }
+  article .lun ul li div {
+    height: 30px;
+  }
+  article .lun ul li a {
+    color: #FE5341;
+  }
+  article .lun ul li .chen {
+    font-size: 14px;
+    color: #FE5341;
+  }
+  article .left {
+    position: absolute;
+    left: -50px;
+    top: 80px;
+  }
+  article .right {
+    position: absolute;
+    right: -35px;
+    top: 80px;
+  }
