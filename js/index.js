@@ -13,10 +13,11 @@ $.ajax({
         var str = '';
         $.each(data,function(index,ele){
             var src=data[index].img;
+            var isrc=src.replace(/192.168.1.64/g,"192.168.31.148")
             if(index<8){
                 str+=`
                 <div class="boxB">
-                    <img src="${src}" alt="" width="220px">
+                    <img src="${isrc}" alt="" width="220px">
                     <p>${data[index].text}</p> 
                     <div class="boxB1">
                     <span class="boxB2"></span>
@@ -70,6 +71,7 @@ $.ajax({
                 <div class="kuWanB">
                     <img src="${isrc}" alt="" width="220px">
                     <p>${data[0][index].text}</p> 
+                    <p class="kuWan1">${data[2][index].description}</p>
                     <div class="boxB1">
                     <span class="kuwanB">${data[0][index].price}</span>
                     <img src="./img/jing.png" alt="" class="imgaa">

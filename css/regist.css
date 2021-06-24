@@ -67,3 +67,123 @@
     border-radius:10%;
     border:1px solid #f35623;
 }
+.hang1{
+    background-color: #f7f7f7;
+    padding: 20px 0px;
+}
+.yao1{
+    margin: auto;
+    width: 1080px;
+    height: 780px;
+    background-color: #ffffff;
+}
+/* 底部 */
+.buttom{
+    width: 100%;
+    height: 360px;
+    background-color: #505050;
+}
+.buttom1{
+    margin: auto;
+    width: 1080px;
+    height: 360px;
+    padding-top: 40px;
+    /* overflow: hidden; */
+}
+.buttom2{
+    width: 160px;
+    height: 280px;
+    float: left;
+    margin-right: 15px;
+}
+.buttom3{
+    float: left;
+    height: 280px;
+    margin-right: 30px;
+}
+.buttom3 p{
+    margin-top: 20px;
+    color:#ccc;
+}
+.buttom4{
+    height: 280px;
+    float: left;
+    margin-right: 15px;
+}
+.buttom4 h3{
+    color:#ccc;
+    margin-bottom: 30px;
+}
+.buttom4 span{
+    display: inline-block;
+    width:80px;
+    color:#ccc;
+} 
+.buttom4 p{
+    color:#ccc;
+}
+.buttom5{
+    margin: auto;
+    text-align: center;
+    color:#ccc;
+}
+.a01{
+    width: 1080px;
+    height: 20px;
+    padding: 15px 0px;
+    margin-bottom: 40px;
+}
+.a01 span:nth-child(1){
+    display: inline-block;
+    width: 4px;
+    height: 20px;
+    line-height: 20px;
+    background-color: red;
+}
+.a01 span:nth-child(2){
+    display: inline-block;
+    width: 100px;
+    height: 20px;
+    line-height: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+.a02{
+    width: 1080px;
+    text-align: center;
+}
+input{
+    width: 400px;
+    height: 50px;
+    margin: 15px 0px;
+    border-radius: 15px;
+    outline: none;
+    border: 1px solid  white;
+    background-color: #f7f7f7;
+    text-indent: 20px;
+}
+.a03{
+    width: 250px;
+    height: 50px;
+    margin-right: 30px;
+}
+.a04{
+    width: 120px;
+    height: 50px;
+    border: 1px solid #ccc;
+    text-indent: 0px;
+    text-align: center;
+}
+.a02 span{
+    display: inline-block;
+    width: 120px;
+    height: 50px;
+}
+.a05{
+    text-indent: 0px;
+    text-align: center;
+    background-color: red;
+    color:whitesmoke ;
+    font-weight: 700;
+    font-size: 15px;
+}
