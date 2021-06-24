@@ -1,0 +1,444 @@
+.outdv{
+    width:100%;
+}
+.indv{
+  width: 1080px;
+  height:90px;
+  /* border: 1px solid black; */
+  text-align: center;
+  margin: auto;
+}
+.indv > span {
+   display: inline-block;
+   width: 160px;
+   height:30px;
+   line-height:30px;
+   margin-top:17px;
+ text-align: center;
+   color:#a7a28f ;
+}
+
+.indv > .znew:hover {
+ width: 170px;
+ height:30px;
+ border-bottom:2px solid red;
+ color:#ff5339;
+}
+.indv > .zhot:hover {
+ width: 170px;
+ height:30px;
+ border-bottom:2px solid red;
+ color:#ff5339;
+}
+/* ///////////////////////////////////////////////////////////////// */
+.ctout{
+ width: 100%;
+ background-color: #f7f7f7 ;
+}
+
+.ctin{
+ /* border: 1px solid red; */
+ width:1080px;
+ /* height: 1000px; */
+ margin: auto;
+ box-sizing: border-box;
+ padding-top:25px;
+ /* padding-left: 50px; */
+ background-color: #f7f7f7;
+ overflow: hidden;
+}
+
+
+.ctin .leftwz{
+ width: 700px ;
+ /* border: 1px solid green; */
+ float: left;
+}
+
+/* ///////////////////////////////////////////////////////////////////////// */
+.tup1{
+   width: 700px;
+   background-color: #ede9e6;
+}
+.tup1  > .writ1{
+   height: 30px;
+   margin:30px 20px 10px ;
+   padding-bottom:20px;
+}
+/* .ctin > .tup1 > .writ1 > */
+  .word1 {
+ display: inline-block;
+ margin:10px 35px 0px;
+ color: #4e455a;
+}
+.tup1 > .writ1 > .tptu {
+ display: inline-block;
+ padding-left:35px;
+ margin-left:20px;
+ margin-bottom:25px;
+ height: 30px;
+ line-height:30px;
+ color: #ff5339;
+ background: url(./jiguo项目/css/img/tx.jpg) no-repeat 0px 0px / 30px 30px;
+ float: left;
+}
+.tup1 > .writ1 > .tptu > a {
+ color: #a5a7a2;
+}
+/* .tup1 > a:nth-child(1) {
+ color: #a5a7a2;
+} */
+
+.tup1 > .writ1 > .zan1 {
+ display: inline-block;
+ width:40px;
+ color: #a5a7a2;
+ text-align: right;
+ padding-left:20px;
+ float: right;
+ background: url(./jiguo项目/css/img/zan.png) no-repeat 13px 2px,
+  url(./jiguo项目/css/img/reply.png) no-repeat 38px 2px;
+}
+
+.about1 {
+ width:700px;
+ height:50px;
+ border: 1px solid #eaeaea ;
+ color: #9f9fa1 ;
+ text-align: center;
+ line-height:50px;
+ margin-bottom:10px;
+}
+/* /////////////////////////////////////////////////////////////////////// */
+
+
+.tup2{
+ width: 640px;
+ background-color: #ede9e6;
+}
+.tup2  > .writ2{
+ height: 30px;
+ margin:30px 20px 10px ;
+ padding-bottom:20px;
+}
+/* .ctin > .tup1 > .writ1 > */
+.word2 {
+display: inline-block;
+margin:10px 35px 0px;
+color: #4e455a;
+}
+.tup2 > .writ2 > .tptu {
+display: inline-block;
+padding-left:35px;
+margin-left:20px;
+margin-bottom:25px;
+height: 30px;
+line-height:30px;
+color: #ff5339;
+background: url(./jiguo项目/css/img/tx.jpg) no-repeat 0px 0px / 30px 30px;
+float: left;
+}
+.tup2 > .writ2 > .tptu > a {
+color: #a5a7a2;
+}
+/* .tup1 > a:nth-child(1) {
+color: #a5a7a2;
+} */
+
+.tup2 > .writ2 > .zan2 {
+display: inline-block;
+width:40px;
+color: #a5a7a2;
+text-align: right;
+padding-left:20px;
+float: right;
+background: url(./jiguo项目/css/img/zan.png) no-repeat 13px 2px,
+url(./jiguo项目/css/img/reply.png) no-repeat 38px 2px;
+} 
+.about2 {
+ width:700px;
+ height:50px;
+ border: 1px solid #eaeaea ;
+ color: #9f9fa1 ;
+ text-align: center;
+ line-height:50px;
+ margin-bottom:10px;
+}
+/* ///////////////////////////////////////////////////////////////////////car */
+
+.tup3{
+ width: 640px;
+ background-color: #ede9e6;
+}
+.tup3  > .writ3{
+ height: 30px;
+ margin:30px 20px 10px ;
+ padding-bottom:20px;
+}
+/* .ctin > .tup1 > .writ1 > */
+.word3 {
+display: inline-block;
+margin:10px 35px 0px;
+color: #4e455a;
+}
+.tup3 > .writ3 > .tptu {
+display: inline-block;
+padding-left:35px;
+margin-left:20px;
+margin-bottom:25px;
+height: 30px;
+line-height:30px;
+color: #ff5339;
+background: url(./jiguo项目/css/img/tx.jpg) no-repeat 0px 0px / 30px 30px;
+float: left;
+}
+.tup3 > .writ3 > .tptu > a {
+color: #a5a7a2;
+}
+/* .tup1 > a:nth-child(1) {
+color: #a5a7a2;
+} */
+
+.tup3 > .writ3 > .zan3 {
+display: inline-block;
+width:40px;
+color: #a5a7a2;
+text-align: right;
+padding-left:20px;
+float: right;
+background: url(./jiguo项目/css/img/zan.png) no-repeat 13px 2px,
+url(./jiguo项目/css/img/reply.png) no-repeat 38px 2px;
+} 
+.about3 {
+ width:700px;
+ height:50px;
+ border: 1px solid #eaeaea ;
+ color: #9f9fa1 ;
+ text-align: center;
+ line-height:50px;
+ margin-bottom:10px;
+}
+/* ///////////////////////////////////////////////////////////////////////car */
+
+.tup4{
+ width: 640px;
+ background-color: #ede9e6;
+}
+.tup4  > .writ4{
+ height: 30px;
+ margin:30px 20px 10px ;
+ padding-bottom:20px;
+}
+/* .ctin > .tup1 > .writ1 > */
+.word4 {
+display: inline-block;
+margin:10px 35px 0px;
+color: #4e455a;
+}
+.tup4 > .writ4 > .tptu {
+display: inline-block;
+padding-left:35px;
+margin-left:20px;
+margin-bottom:25px;
+height: 30px;
+line-height:30px;
+color: #ff5339;
+background: url(./jiguo项目/css/img/tx.jpg) no-repeat 0px 0px / 30px 30px;
+float: left;
+}
+.tup4 > .writ4 > .tptu > a {
+color: #a5a7a2;
+}
+/* .tup1 > a:nth-child(1) {
+color: #a5a7a2;
+} */
+
+.tup4 > .writ4 > .zan4 {
+display: inline-block;
+width:40px;
+color: #a5a7a2;
+text-align: right;
+padding-left:20px;
+float: right;
+background: url(./jiguo项目/css/img/zan.png) no-repeat 13px 2px,
+url(./jiguo项目/css/img/reply.png) no-repeat 38px 2px;
+} 
+.about4 {
+ width:700px;
+ height:50px;
+ border: 1px solid #eaeaea ;
+ color: #9f9fa1 ;
+ text-align: center;
+ line-height:50px;
+ margin-bottom:10px;
+}
+/* ///////////////////////////////////////////////////////////////////////car */
+
+.tup5{
+ width: 640px;
+ background-color: #ede9e6;
+}
+.tup5  > .writ5{
+ height: 30px;
+ margin:30px 20px 10px ;
+ padding-bottom:20px;
+}
+/* .ctin > .tup1 > .writ1 > */
+.word5 {
+display: inline-block;
+margin:10px 35px 0px;
+color: #4e455a;
+}
+.tup5 > .writ5 > .tptu {
+display: inline-block;
+padding-left:35px;
+margin-left:20px;
+margin-bottom:25px;
+height: 30px;
+line-height:30px;
+color: #ff5339;
+background: url(./jiguo项目/css/img/tx.jpg) no-repeat 0px 0px / 30px 30px;
+float: left;
+}
+.tup5 > .writ5 > .tptu > a {
+color: #a5a7a2;
+}
+/* .tup1 > a:nth-child(1) {
+color: #a5a7a2;
+} */
+
+.tup5 > .writ5 > .zan5 {
+display: inline-block;
+width:40px;
+color: #a5a7a2;
+text-align: right;
+padding-left:20px;
+float: right;
+background: url(./jiguo项目/css/img/zan.png) no-repeat 13px 2px,
+url(./jiguo项目/css/img/reply.png) no-repeat 38px 2px;
+} 
+.about5 {
+ width:700px;
+ height:50px;
+ border: 1px solid #eaeaea ;
+ color: #9f9fa1 ;
+ text-align: center;
+ line-height:50px;
+ margin-bottom:10px;
+}
+/* ///////////////////////////////////////////////////////////////////////car */
+
+.djmore{
+ width:700px;
+ height: 20px;
+ color: #f35236 ;
+ text-align: center;
+ padding-left: 25px ;
+ margin:20px 0px 50px;
+ background: url(./jiguo项目/css/img/more.png) no-repeat 300px 8px;
+}
+
+/* 、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、 */
+
+.rightwz{
+ width: 270px;
+ /* height: 500px; */
+ /* border: 1px solid black; */
+ float: left;
+ margin-left:30px ;
+ box-sizing: border-box;
+}
+
+.rightwz .headjg{
+ width: 270px;
+ height:20px;
+ box-sizing: border-box;
+ border-left: 5px solid #f75843 ;
+ margin-bottom: 20px;
+ padding-left: 30px;
+ color: #3a343e;
+}
+
+.tu_jg{
+ width: 270px;
+ height: 165px;
+ /* border: 1px solid green; */
+ margin-bottom: 20px;
+}
+.wz_jg{
+ width:270px ;
+ height: 255px;
+ /* border: 1px solid blue; */
+ box-sizing: border-box;
+ line-height:25px ;
+ font-size: 12px;
+ color: #9d9e96 ;
+}
+.wz_jg span{
+ font-size:16px;
+ font-weight: 600;
+ color: #454547 ;
+}
+
+.guanzhu{
+ width: 270px;
+ height: 20px;
+ border-left: 5px solid #f75843 ;
+ color: #454547 ;
+ padding-left: 25px;
+ margin: 50px 0px 30px;
+ 
+}
+
+/* //////////////////////////////////////////////////////// */
+
+/* 底部 */
+.buttom{
+ width: 100%;
+ height: 360px;
+ background-color: #505050;
+}
+.buttom1{
+ margin: auto;
+ width: 1080px;
+ height: 360px;
+ padding-top: 40px;
+ /* overflow: hidden; */
+}
+.buttom2{
+ width: 160px;
+ height: 280px;
+ float: left;
+ margin-right: 15px;
+}
+.buttom3{
+ float: left;
+ height: 280px;
+ margin-right: 30px;
+}
+.buttom3 p{
+ margin-top: 20px;
+ color:#ccc;
+}
+.buttom4{
+ height: 280px;
+ float: left;
+ margin-right: 15px;
+}
+.buttom4 h3{
+ color:#ccc;
+ margin-bottom: 30px;
+}
+.buttom4 span{
+ display: inline-block;
+ width:80px;
+ color:#ccc;
+} 
+.buttom4 p{
+ color:#ccc;
+}
+.buttom5{
+ margin: auto;
+ text-align: center;
+ color:#ccc;
+}
