@@ -2,6 +2,10 @@
     margin: 0%;
     padding: 0%;
 }
+a{
+    text-decoration: none;
+    color: red;
+}
 .tpout{
 width:100%;
 /* height: 75px; */
