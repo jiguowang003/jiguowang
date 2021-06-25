@@ -1,59 +1,88 @@
-$('.a04').click(function(){
+$('.a04').click(function () {
     var s = 60
-    t=setInterval(function(){
+    t = setInterval(function () {
         s--
-        $('.a04').val('请稍等'+s+"秒！");
-        if(s==0){
+        $('.a04').val('请稍等' + s + "秒！");
+        if (s == 0) {
             clearInterval(t)
             $('.a04').val('获取验证码');
         }
-    },1000);
+    }, 1000);
 })
-var inputI=$("input");
-console.log(inputI)
-inputI[0].onfocus;
-inputI[0].onblur=function(){
-    var tel = /^1[3|4|5|7|8]\d{9}$/ //手机号正则
-    var value1=inputI[0].value;
-    if(tel.test(value1)==false){
-        alert("请输入合适手机号！")
+var inputI = $("input");
+inputI[0].onblur = function () {
+    var tel =/^1[3|4|5|6|7|8|9]\d{9}$/g//手机号正则
+    var value1 = inputI[0].value;
+    if (tel.test(value1) == false) {
+        $(this).val("请输入合适手机号！")
+        $(this).css('color', 'red')
     }
 }
-inputI[1].onblur=function(){
-    var jiao=$(".a02>span").html();
-    var value2=inputI[1].value;
-    if( jiao!=value2){
-        alert("请输入合适校验码！")
+$('input').focus(function (index) {
+    if (index < 7) {
+        $(this).css('color', '#000')
+        $(this).val('')
+    }
+
+})
+inputI[1].onblur = function () {
+    var value2 = inputI[1].value;
+    if (value2 != "r2b7") {
+        $(this).val("请输入合适校验码！")
+        $(this).css('color', 'red')
     }
 }
-inputI[2].onblur=function(){
+inputI[2].onblur = function () {
     var tel2 = /^[0-9]{4}$/
-    var value3=inputI[2].value;
-    if(tel2.test(value3)==false){
-        alert("请输入合适验证码！")
+    var value3 = inputI[2].value;
+    if (tel2.test(value3) == false) {
+        $(this).val("请输入合适验证码！")
+        $(this).css('color', 'red')
     }
 }
-inputI[4].onblur=function(){
-    var tel3 = /^[0-9a-zA-Z]{6,12}$/
-    var value4=inputI[4].value;
-    if(tel3.test(value4)==false){
-        alert("请输入合适用户名！")
+inputI[4].onblur = function () {
+    var tel3 =/^(\w|[\u4e00-\u9fa5]){4,8}$/g;
+    var value4 = inputI[4].value;
+    if (tel3.test(value4) == false) {
+        $(this).val("请输入合适用户名！")
+        $(this).css('color', 'red')
     }
 }
-inputI[5].onblur=function(){
-    var tel4 = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/
-    // var tel4=/[0-9]{4,8}/
-    var value5=inputI[5].value;
-    console.log(value5)
-    if(tel4.test(value5)==false){
-        alert("请输入合适密码！")
+inputI[5].onblur = function () {
+    var tel4 = /^\w{6,12}$/g;
+    var value5 = inputI[5].value;
+    if (tel4.test(value5) == false) {
+        $(this).val("请输入合适密码！6-12位")
+        $(this).css('color', 'red')
     }
 }
-inputI[6].onblur=function(){
-    // 至少8个字符，至少1个字母，1个数字和1个特殊字符
-    var tel1 = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/ 
-    console.log(inputI[6].value)
-    if(inputI[5].value!=inputI[6].value){
-        alert("两次密码不一样")
+inputI[6].onblur = function () {
+    if (inputI[5].value != inputI[6].value) {
+        $(this).val("两次密码不一样")
+        $(this).css('color', 'red')
     }
 }
+// 提交
+$('form').submit(function (e) {
+    e.preventDefault();
+    $.ajax({
+        url: 'http://localhost:3000/users/register',
+        type: 'POST',
+        data: {
+            phone: $('input').eq(0).val(),
+            code: $('input').eq(1).val(),
+            username: $('input').eq(4).val(),
+            password: $('input').eq(5).val(),
+        },
+        dataType: 'JSON',
+        success: function (a) {
+            console.log(a.status)
+            if (a.status == 200) {
+                location.href = "./index.html"
+            } else {
+                alert(a.msg);
+            }
+        }
+    })
+
+})
