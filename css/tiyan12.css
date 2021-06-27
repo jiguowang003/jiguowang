@@ -4,6 +4,12 @@
 }
 a{
     text-decoration: none;
+    color:black;
+}
+ol li a{
+    color: red;
+}
+.top5 a{
     color: red;
 }
 /* 头部 */
@@ -12,6 +18,7 @@ a{
     /* height: 75px; */
     border-bottom: 2px solid #d0d0d0;
     padding: 20px 0px;
+    margin-bottom: 40px;
 }
 .tpin{
     width: 1080px;

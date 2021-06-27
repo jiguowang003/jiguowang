@@ -4,6 +4,12 @@
 }
 a{
     text-decoration: none;
+    color:black;
+}
+ol li a{
+    color: red;
+}
+.top5 a{
     color: red;
 }
 /* 头部 */
@@ -12,6 +18,7 @@ a{
     /* height: 75px; */
     border-bottom: 2px solid #d0d0d0;
     padding: 20px 0px;
+    margin-bottom: 40px;
 }
 .tpin{
     width: 1080px;
@@ -84,12 +91,13 @@ a{
     margin: 0px 20px;
     width: 100px;
     padding: 10px 0px;
+    color: black;
+}
+.top1 .ppp span a{
+    color: black;
 }
 .top2{
     border-bottom: 2px solid red;
-}
-.top5{
-    color: red;
 }
 .top9{
     margin: auto;
@@ -200,4 +208,15 @@ a{
     margin: auto;
     text-align: center;
     color:#ccc;
+}
+.hangkkk{
+    height: auto;
+    overflow: hidden;
+}
+.jiazai{
+  margin: auto;
+  width: 1146px;
+  height: auto;
+  text-align: center;
+  overflow: hidden;
 }

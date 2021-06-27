@@ -7,7 +7,7 @@ $.ajax({
         var str = '';
         $.each(data,function(index,ele){
             var src=data[index].img;
-            var isrc=src.replace(/192.168.1.64/g,"192.168.31.148")
+            var isrc=src.replace(/192.168.1.13/g,"localhost")
             console.log(src)
             if(index<=15){
                 str+=`

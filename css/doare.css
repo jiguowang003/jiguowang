@@ -5,6 +5,12 @@
 }
 a {
   text-decoration: none;
+  color: #322c30;
+}
+.tpin ul li:nth-child(3) a {
+  color: red !important;
+}
+.zhuce a {
   color: red;
 }
 /* 头部内容 */
@@ -29,6 +35,9 @@ a {
   padding: 0%;
   overflow: hidden;
   float: left;
+}
+.tpin ul li:nth-child(3) a {
+  color: red !important;
 }
 .tpin > ul > li {
   list-style: none;
@@ -88,11 +97,14 @@ a {
 .zhuyi span {
   padding: 10px 60px;
   margin-left: 20px;
-  font-size: 20px;
+  font-size: 17px;
   display: inline-block;
 }
-.zhuyi span:first-of-type {
+.zhuyi span:last-of-type {
   border-bottom: solid 3px red;
+}
+.zhuyi span:last-of-type a {
+  color: red;
 }
 .huoTai {
   margin: auto;
@@ -115,6 +127,7 @@ a {
   overflow: hidden;
   color: red;
   text-align: center;
+  margin: 30px auto;
   background: url(img/more.png) no-repeat 466px 7px;
 }
 .buttom {

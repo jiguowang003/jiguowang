@@ -5,6 +5,12 @@
 }
 a {
   text-decoration: none;
+  color: #322c30;
+}
+.tpin ul li:nth-child(3) a {
+  color: red !important;
+}
+.zhuce a {
   color: red;
 }
 /* 头部内容 */
@@ -29,6 +35,9 @@ a {
   padding: 0%;
   overflow: hidden;
   float: left;
+}
+.tpin ul li:nth-child(3) a {
+  color: red !important;
 }
 .tpin > ul > li {
   list-style: none;
@@ -69,6 +78,10 @@ a {
   height: 30px;
   border-radius: 10%;
   border: 1px solid #f35623;
+  color: red;
+}
+.zhuce a {
+  color: red;
 }
 /* 主体部分 */
 .zhu {
@@ -84,15 +97,20 @@ a {
 .zhuyi h1 {
   margin-top: 30px;
   margin-bottom: 20px;
+  color: #322c30;
 }
 .zhuyi span {
   padding: 10px 60px;
   margin-left: 20px;
-  font-size: 20px;
+  font-size: 17px;
   display: inline-block;
 }
-.zhuyi span:last-of-type {
+.zhuyi span:first-of-type {
   border-bottom: solid 3px red;
+  color: red;
+}
+.zhuyi span:first-of-type a {
+  color: red;
 }
 .huoTai {
   margin: auto;
@@ -115,6 +133,7 @@ a {
   overflow: hidden;
   color: red;
   text-align: center;
+  margin: 30px auto;
   background: url(img/more.png) no-repeat 466px 7px;
 }
 .buttom {

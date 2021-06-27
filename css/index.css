@@ -376,3 +376,14 @@ article {
     right: -35px;
     top: 80px;
   }
+  .hangkkk{
+      height: auto;
+      overflow: hidden;
+  }
+  .jiazai{
+    margin: auto;
+    width: 1146px;
+    height: auto;
+    text-align: center;
+    overflow: hidden;
+  }

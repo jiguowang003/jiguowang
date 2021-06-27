@@ -2,6 +2,16 @@
     margin: 0px;
     padding:0px
 }
+a{
+    text-decoration: none;
+    color:black;
+}
+ol li a{
+    color: red;
+}
+.top5 a{
+    color: red;
+}
 /* 头部 */
 .tpout{
     width:100%;
@@ -200,9 +210,5 @@
     color: pink;
 }
 .red{
-    color: red;
-}
-a{
-    text-decoration: none;
     color: red;
 }

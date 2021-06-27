@@ -1,3 +1,4 @@
+
 $('.a04').click(function () {
     var s = 60
     t = setInterval(function () {
@@ -7,9 +8,17 @@ $('.a04').click(function () {
             clearInterval(t)
             $('.a04').val('获取验证码');
         }
-    }, 1000);
+    }, 1000)
 })
 var inputI = $("input");
+for(i=0 ; i<7; i++){
+(function(i){
+    inputI[i].onfocus=function(){
+        inputI[i].style.color = "black";
+        inputI[i].value ='';
+    }
+})(i)
+}
 inputI[0].onblur = function () {
     var tel =/^1[3|4|5|6|7|8|9]\d{9}$/g//手机号正则
     var value1 = inputI[0].value;
@@ -18,13 +27,13 @@ inputI[0].onblur = function () {
         $(this).css('color', 'red')
     }
 }
-$('input').focus(function (index) {
-    if (index < 7) {
-        $(this).css('color', '#000')
-        $(this).val('')
-    }
-
-})
+// $('input').focus(function (index) {
+//     console.log(index)
+//     if (index < 7) {
+//         $(this).css('color', '#000')
+//         $(this).val('')
+//     }
+// })
 inputI[1].onblur = function () {
     var value2 = inputI[1].value;
     if (value2 != "r2b7") {

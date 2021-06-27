@@ -11,9 +11,10 @@ $.ajax({
     dataType:"JSON",
     success: function(data){
         var str = '';
+        console.log(data);
         $.each(data,function(index,ele){
             var src=data[index].img;
-            var isrc=src.replace(/192.168.1.64/g,"192.168.31.148")
+            var isrc=src.replace(/192.168.1.13/g,"localhost")
             if(index<8){
                 str+=`
                 <div class="boxB">
@@ -39,7 +40,7 @@ $.ajax({
         var str = '';
         $.each(data,function(index,ele){
             var src=data[index].img;
-            var isrc=src.replace(/192.168.1.64/g,"192.168.31.148")
+            var isrc=src.replace(/192.168.1.64/g,"localhost")
             if(index<4){
                 str+=`
                 <div class="daoGoB">
@@ -60,12 +61,11 @@ $.ajax({
     type:"GET",
     dataType:"JSON",
     success: function(data){
-        console.log(data);
         var str = '';
         $.each(data,function(index,ele){
             if(index<8){
                 var src=data[0][index].img;
-                var isrc=src.replace(/192.168.1.64/g,"192.168.31.148")
+                var isrc=src.replace(/192.168.1.64/g,"localhost")
                 console.log(src)
                 str+=`
                 <div class="kuWanB">
@@ -82,8 +82,7 @@ $.ajax({
         $.each(data,function(index,ele){
             if(index<8){
                 var src=data[1][index].img;
-                var isrc=src.replace(/192.168.1.64/g,"192.168.31.148")
-                console.log(src)
+                var isrc=src.replace(/192.168.1.64/g,"localhost")
                 str+=`
                 <div class="kuWanB">
                     <img src="${isrc}" alt="" width="220px">
@@ -101,8 +100,7 @@ $.ajax({
         $.each(data,function(index,ele){
             if(index<8){
                 var src=data[1][index].img;
-                var isrc=src.replace(/192.168.1.64/g,"192.168.31.148")
-                console.log(src)
+                var isrc=src.replace(/192.168.1.64/g,"localhost")
                 str+=`
                 <div class="kuWanB">
                     <img src="${isrc}" alt="" width="220px">
@@ -120,8 +118,7 @@ $.ajax({
         $.each(data,function(index,ele){
             if(index<8){
                 var src=data[2][index].img;
-                var isrc=src.replace(/192.168.1.64/g,"192.168.31.148")
-                console.log(src)
+                var isrc=src.replace(/192.168.1.64/g,"localhost")
                 str+=`
                 <div class="kuWanB">
                     <img src="${isrc}" alt="" width="220px">
@@ -206,7 +203,7 @@ $(function(){
             var shu = 0;
             var sindex = "";
             data[shu].map(function(item){
-                var isrc = item.img.replace(/192.168.1.64/g,'192.168.31.148')
+                var isrc = item.img.replace(/192.168.1.64/g,'localhost')
                 sindex += `<li><img src="${isrc}" alt="">
                 <div class="mu">${item.text}</div>
                 <div><span class="hong">2032</span><span class="hong">20台</span></div>
@@ -215,6 +212,35 @@ $(function(){
                 <div class="you">首发</div>`
             })
             $('article ul').html(sindex)
+        }
+    })
+})
+$(".jia").click(function(){
+    $.ajax({
+        url:'http://localhost:3000/useing/master',
+        type:"GET",
+        dataType:"JSON",
+        success: function(data){
+            var str = '';
+            console.log(data);
+            $.each(data,function(index,ele){
+                var src=data[index].img;
+                var isrc=src.replace(/192.168.1.13/g,"localhost")
+                if(index<8){
+                    str+=`
+                    <div class="boxB">
+                        <img src="${isrc}" alt="" width="220px">
+                        <p>${data[index].text}</p> 
+                        <div class="boxB1">
+                        <span class="boxB2"></span>
+                        <span>${data[index].uName}</span>
+                        <img src="./img/jing.png" alt="" class="imgaa">
+                        </div>
+                    </div>
+                    `;
+                }
+            })
+            $(".jiazai").html(str);
         }
     })
 })

@@ -8,7 +8,7 @@ $.ajax({
         $.each(data,function(index,ele){
             var src=data[index].img;
             console.log(src)
-            var isrc=src.replace(/192.168.1.64/g,"192.168.31.148")
+            var isrc=src.replace(/192.168.1.13/g,"localhost")
             
                 str+=`
                 <div class="top7">
