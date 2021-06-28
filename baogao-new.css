@@ -1,4 +1,10 @@
 
+ a{
+  color: #454547;
+}
+a:hover{
+  color: red;
+}
    .outdv{
        width:100%;
    }
@@ -18,8 +24,10 @@
     text-align: center;
       color:#a7a28f ;
   }
-
-.indv > .znew:hover {
+  .indv > span > a{
+    color: #454547;
+  }
+/* .indv > .znew:hover {
     width: 170px;
     height:30px;
     border-bottom:2px solid red;
@@ -30,7 +38,7 @@
     height:30px;
     border-bottom:2px solid red;
     color:#ff5339;
-}
+} */
 /* ///////////////////////////////////////////////////////////////// */
   .ctout{
     width: 100%;
